@@ -8,8 +8,8 @@ const Form = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [location, setLocation] = useState("");
   return (
-    <div className="flex flex-col w-[470px] h-[420px] rounded-[34px] bg-[#FFF] drop-shadow-2xl">
-      <h4 className="text-[20px] font-[500] text-center mt-[26px]">
+    <div className="flex flex-col w-[470px] h-[420px] rounded-[34px] bg-[#FFF] drop-shadow-[0_4px_10px_rgba(0,0,0,0.25)]">
+      <h4 className="text-[20px] font-body font-[500] text-center mt-[26px]">
         Fill in the details to get a call!
       </h4>
       <span className="flex mt-[25px] gap-[8px]">
