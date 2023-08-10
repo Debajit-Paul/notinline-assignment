@@ -18,8 +18,8 @@ const ExpandCardData = [
   {
     id: 3,
     img: `${Icon_3}`,
-    title: "Timely collections",
-    dec: "We collect samples timely to prevent treatment delays and ensure your continued well-being.",
+    title: "Value experience",
+    dec: "Experience seamless care without the hassle of waiting in long lines for an appointment. Book with us for a healthier lifestyle.",
   },
   {
     id: 4,
