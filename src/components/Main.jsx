@@ -28,7 +28,7 @@ const Main = () => {
     },
   };
   return (
-    <div className="flex flex-col items-center w-full h-[3138px] md:h-[2850px] bg-[url('./public/MobileBG.png')] md:bg-[url('./public/BG.png')] bg-no-repeat bg-cover">
+    <div className="flex flex-col items-center w-full h-[3138px] md:h-[2850px] bg-[url('../src/assets/MobileBG.png')] md:bg-[url('../src/assets/BG.png')] bg-no-repeat bg-cover">
       <div className="md:hidden flex flex-col items-center relative top-[110px] px-[33px]">
         <div>
           <h5 className="text-[#333] text-center text-[1.5rem] font-[600] w-[17rem]">
