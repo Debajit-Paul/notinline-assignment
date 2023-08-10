@@ -13,7 +13,7 @@ const MainBottom = () => {
           <img
             src={Vector}
             alt="strips"
-            className="w-[5.5rem] md:w-[230px] h-[0.5rem] md:h-[19px] ml-[1rem] md:ml-[80px]"
+            className="w-[5.5rem] md:w-[185px] h-[0.5rem] md:h-[20px] ml-[1rem] md:ml-[20px]"
           />
           <p className="mt-[0.87rem] md:mt-[12px] text-center text-[#6E6E6E] font-[500] text-[0.625rem] md:text-[24px] w-[18.625rem] md:w-[43rem]">
             We want you and your heart to be healthy so you can live a happy
