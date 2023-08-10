@@ -1,45 +1,42 @@
 import React from "react";
+import { useState } from "react";
 import Logo from "../assets/Logo.png";
 import NotInLineLogo from "../assets/NotInLineLogo.png";
-import PlayStore from "../assets/PlayStore.png";
+import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
+import { VscChromeClose } from "react-icons/vsc";
+import { BiMenuAltRight } from "react-icons/bi";
 const Navbar = () => {
+  const [mobileMenu, setMobileMenu] = useState(false);
   return (
-    <div className="w-screen h-[83px] flex items-center justify-around absolute z-10 bg-white">
-      <div className="flex w-[277px] w-max-[23%] h-[64px]">
-        <img src={Logo} alt="NotInLineLogo" className="w-[63px] h-[64px]" />
+    <div className="w-full h-[81px] md:h-[83px] flex items-center justify-between md:justify-around px-[40px] md:px-[40px] absolute z-10 bg-white">
+      <div className="flex md:w-[277px] w-[127px] md:h-[64px] h-[29px]">
+        <img
+          src={Logo}
+          alt="NotInLineLogo"
+          className="w-[28px] md:w-[63px] h-[29px] md:h-[64px]"
+        />
         <img
           src={NotInLineLogo}
           alt="NotInLine"
-          className="w-[214px] h-[4rem]"
+          className="w-[98px] md:w-[214px] h-[29px] md:h-[4rem]"
         />
       </div>
-      <div className="flex items-center gap-[64px] w-[53%]">
-        <ul className="list-none flex justify-between items-center w-[423px] h-[41px] gap-[22px]">
-          <li className=" text-[16px] font-[400] cursor-pointer">Home</li>
-          <li className=" text-[16px] font-[400] cursor-pointer">
-            Health Conditions
-          </li>
-          <li className=" text-[20px] text-[#138ED1] font-[600] cursor-pointer">
-            Lab tests
-          </li>
-          <li className=" text-[16px] font-[400] cursor-pointer">Medicines</li>
-        </ul>
-        <div className="flex gap-[17px]">
-          <button className="w-[113px] h-[35px] rounded-[4px] bg-[#00486c] text-white text-[14px] font-[400]">
-            For patients
-          </button>
-          <button className="w-[113px] h-[35px] rounded-[4px] bg-[#00486c] text-white text-[14px] font-[400]">
-            For hospitals
-          </button>
-        </div>
+      <Menu />
+      {mobileMenu && <MobileMenu setMobileMenu={setMobileMenu} />}
+      <div className="w-8 md:w-12 h-8 md:h-12 rounded-full flex md:hidden justify-center items-center hover:bg-black/[0.1] cursor-pointer relative -mr-2">
+        {mobileMenu ? (
+          <VscChromeClose
+            className="text-[16px]"
+            onClick={() => setMobileMenu(false)}
+          />
+        ) : (
+          <BiMenuAltRight
+            className="text-[20px]"
+            onClick={() => setMobileMenu(true)}
+          />
+        )}
       </div>
-
-      <button className="bg-[#333] w-[115px] w-max-[23%] h-[35px] rounded-[4px] flex gap-[7px] items-center justify-center">
-        <img src={PlayStore} alt="playstore" className="w-[21px] h-[20px]" />
-        <p className="w-[61px] text-white text-[12px] font-body font-[500]">
-          Play store
-        </p>
-      </button>
     </div>
   );
 };

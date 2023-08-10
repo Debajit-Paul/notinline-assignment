@@ -19,11 +19,6 @@ const SmallCardData = [
     title: "2200",
     dec: "Test menu",
   },
-  {
-    id: 5,
-    title: "5+",
-    dec: "Cities present in",
-  },
 ];
 
 export default SmallCardData;
