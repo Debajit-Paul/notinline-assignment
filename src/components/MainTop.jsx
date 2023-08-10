@@ -1,7 +1,7 @@
 import React from "react";
 import Form from "./Form";
 import Offer from "../assets/Offer.svg";
-import Hero from "../assets/Hero.svg";
+import Hero from "../assets/Hero.png";
 import Vector from "../assets/Vector.svg";
 const MainTop = () => {
   return (

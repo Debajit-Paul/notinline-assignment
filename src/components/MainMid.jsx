@@ -8,7 +8,7 @@ import PackagesCardMobile from "./PackagesCardMobile";
 const MainMid = () => {
   return (
     <>
-      <div className="flex flex-col items-center absolute top-[650px] md:top-[692px] w-full">
+      <div className="flex flex-col items-center absolute top-[650px] md:top-[732px] w-full">
         <div className="flex flex-col md:flex-row items-center gap-[1rem] md:gap-[47px]">
           <div className="flex items-center gap-[20px]">
             <img
