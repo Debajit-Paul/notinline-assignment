@@ -26,7 +26,7 @@ const Menu = () => {
 
       <button className="bg-[#333] w-[115px] w-max-[23%] h-[35px] rounded-[4px] md:flex hidden gap-[7px] items-center justify-center">
         <img src={PlayStore} alt="playstore" className="w-[21px] h-[20px]" />
-        <p className="w-[61px] text-white text-[12px] font-body font-[500]">
+        <p className="w-[61px] text-white text-[12px] font-body font-[500] mr-[1.12rem]">
           Play store
         </p>
       </button>
